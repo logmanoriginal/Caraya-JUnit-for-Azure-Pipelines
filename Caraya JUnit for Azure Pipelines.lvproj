@@ -17,6 +17,7 @@
 			<Item Name="Create Project Report.vi" Type="VI" URL="../Examples/Create Project Report.vi"/>
 		</Item>
 		<Item Name="JUnit for Azure Pipelines.lvclass" Type="LVClass" URL="../JUnit for Azure Pipelines/JUnit for Azure Pipelines.lvclass"/>
+		<Item Name="JUnit XML.lvlib" Type="Library" URL="../JUnit XML/JUnit XML.lvlib"/>
 		<Item Name="XML.lvlib" Type="Library" URL="../XML/XML.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
