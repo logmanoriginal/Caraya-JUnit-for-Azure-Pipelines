@@ -18,7 +18,6 @@
 		</Item>
 		<Item Name="JUnit for Azure Pipelines.lvclass" Type="LVClass" URL="../JUnit for Azure Pipelines/JUnit for Azure Pipelines.lvclass"/>
 		<Item Name="JUnit XML.lvlib" Type="Library" URL="../JUnit XML/JUnit XML.lvlib"/>
-		<Item Name="XML.lvlib" Type="Library" URL="../XML/XML.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="52DC21994E7C3E95E01EF5E980EE86B0Array Size(s)__ogtk.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/_Caraya_internal_deps/52DC21994E7C3E95E01EF5E980EE86B0Array Size(s)__ogtk.vi"/>
