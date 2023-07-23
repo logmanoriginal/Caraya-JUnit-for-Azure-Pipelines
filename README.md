@@ -67,7 +67,9 @@ To get a local copy up and running follow these simple steps.
 
 ## Usage
 
-<font color="red"><b>TODO</b></font>
+Here is an example that uses the JUnit report generator to create a test report for a project.
+
+![Example](images/example.png)
 
 ## Roadmap
 
