@@ -38,7 +38,62 @@
 
 ## About The Project
 
-**Caraya JUnit for Azure Pipelines** is a test report extension for [Caraya](https://github.com/JKISoftware/Caraya) that generates JUnit test reports compatible with [Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines). Test reports are generated according to the [JUnit result format](https://github.com/windyroad/JUnit-Schema) and can be published to Azure Pipelines using the [Publish Test Results v2 task](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-test-results-v2).
+**Caraya JUnit for Azure Pipelines** is an extension for [Caraya](https://github.com/JKISoftware/Caraya) that generates JUnit test reports compatible with [Azure Pipelines](https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/what-is-azure-pipelines). Test reports are generated according to the [JUnit result format](https://github.com/windyroad/JUnit-Schema) and can be published to Azure Pipelines using the [Publish Test Results v2 task](https://learn.microsoft.com/en-us/azure/devops/pipelines/tasks/reference/publish-test-results-v2).
+
+>_Caraya already includes JUnit support. Why do we need another JUnit extension for Azure Pipelines?_
+
+Here are a few reasons:
+
+- **Azure Pipelines does not display test suites** \
+  This is a [known issue](https://github.com/Microsoft/azure-pipelines-tasks/issues/7659) and there is a [suggestion](https://developercommunity.visualstudio.com/t/Support-Test-Suites-of-JUNIT-test-result/10418614) to fix it. Please vote for it :sparkling_heart:
+
+- **Assertion labels are indistinguishable** \
+  By default Caraya uses the Assertion VI name when the assertion label is empty (which it is by default). For example, "Assert Equal Value_Variant". This label is not very helpful, especially the in the default view. \
+  \
+  ![Run View](images/azure-default-run-view.png)\
+  \
+  File view is a little more readable. \
+  \
+  ![File View](images/azure-default-file-view.png)
+
+- **Test duration for all test cases is zero** \
+  By default, the test duration of a test case in Caraya is zero unless the user explicitly monitors the test duration and provides it to the assertion function.
+
+- **Error message and stack trace are meaningless** \
+  The default JUnit report produces meaningless error messages and stack traces. A typical failure has the error message "test failure" and stack trace "FAIL". \
+  \
+  ![Test Details](images/azure-default-details.png)
+
+- **Not executed assertions are reported as skipped** \
+  When an error is passed to an assertion function, it is reported as "skipped" in the default JUnit report. That was probably a design decision. Skipped tests, however, do not count towards failed tests in Azure Pipelines. They simply appear under "others" (just like disabled tests). \
+  \
+  ![Skipped Tests](images/azure-default-skipped.png)
+
+>_Why not improve the JUnit test report of Caraya?_
+
+I've thought about it and decided against it because the differences introduced by this project would likely be considered breaking changes by other users.
+
+>_How does this project improve test reports in Azure Pipelines?_
+
+This project is build from scratch and aims at providing useful test reports in Azure Pipelines. Here are a few things it improves:
+
+- **Test results are reported with their fully qualified name** \
+  This makes the default view much more verbose. \
+  \
+  ![Run View](images/azure-project-run-view.png)
+
+- **Test duration is calculated for every test case** \
+  Test duration is calculated from the timestamp of each assertion. User specified test durations still take precedence, of course.
+
+- **Meaningful error messages and stack traces are reported** \
+  This extension tries its best to figure out the best error message and stack trace for a failure, based on assertion results and errors. \
+  \
+  ![Failure Details](images/azure-project-details.png)
+
+- **Any failure is considered a failed test** \
+  This includes errors passed to an assertion function as well as any error reported by an assertion. Tests are only considered skipped when no error occurred and the assertion was not executed. \
+  \
+  ![Failed Tests](images/azure-project-failure.png)
 
 ### Built With
 
