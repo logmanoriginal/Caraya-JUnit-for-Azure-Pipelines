@@ -11,6 +11,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+[![Build Status][azure-build-status-shield]][azure-build-status-url]
 [![BSD-3-Clause License][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
@@ -170,3 +171,5 @@ Project Link: [https://github.com/logmanoriginal/caraya-junit-for-azure-pipeline
 [issues-url]: https://github.com/logmanoriginal/caraya-junit-for-azure-pipelines/issues
 [license-shield]: https://img.shields.io/github/license/logmanoriginal/caraya-junit-for-azure-pipelines.svg?style=for-the-badge
 [license-url]: https://github.com/logmanoriginal/caraya-junit-for-azure-pipelines/blob/master/LICENSE.txt
+[azure-build-status-url]: https://dev.azure.com/neuperger/Public/_build/latest?definitionId=16&branchName=main
+[azure-build-status-shield]: https://img.shields.io/azure-devops/build/neuperger/public/16/main?style=for-the-badge&logo=azure-pipelines&label=Azure%20Pipelines
