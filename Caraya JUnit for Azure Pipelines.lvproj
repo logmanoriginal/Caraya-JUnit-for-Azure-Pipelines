@@ -18,6 +18,7 @@
 		</Item>
 		<Item Name="Tests" Type="Folder">
 			<Item Name="JUnit Conversion Tests.lvlib" Type="Library" URL="../Tests/JUnit Conversion Tests/JUnit Conversion Tests.lvlib"/>
+			<Item Name="JUnit XML Tests.lvlib" Type="Library" URL="../Tests/JUnit XML Tests/JUnit XML Tests.lvlib"/>
 		</Item>
 		<Item Name="JUnit Conversion.lvlib" Type="Library" URL="../JUnit Conversion/JUnit Conversion.lvlib"/>
 		<Item Name="JUnit for Azure Pipelines.lvclass" Type="LVClass" URL="../JUnit for Azure Pipelines/JUnit for Azure Pipelines.lvclass"/>
