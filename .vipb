@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-07-22 10:15:16" Modified_Date="2023-08-06 16:35:58" Creator="pasca" Comments="" ID="38ce423ed95de599cfea2881d0b6b245">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-07-22 10:15:16" Modified_Date="2024-01-07 13:03:26" Creator="pasca" Comments="" ID="615fd408eaaa675dcf2b0d1f78e80d68">
   <Library_General_Settings>
     <Package_File_Name>PNR_lib_Caraya_JUnit_for_Azure_Pipelines</Package_File_Name>
-    <Library_Version>1.0.0.5</Library_Version>
+    <Library_Version>1.0.1.6</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..</Library_Output_Folder>
@@ -17,8 +17,8 @@
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
-      <External_Dependencies>jki_lib_caraya &gt;= 1.4.1.143</External_Dependencies>
-      <Direct_Dependencies>jki_lib_caraya-1.4.1.143</Direct_Dependencies>
+      <External_Dependencies>jki_lib_caraya &gt;= 1.4.2.144</External_Dependencies>
+      <Direct_Dependencies>jki_lib_caraya-1.4.2.144</Direct_Dependencies>
     </Package_Dependencies>
     <Custom_Action_VIs>
       <Pre-Build_VI/>
@@ -32,10 +32,11 @@
     <Description>
       <One_Line_Description_Summary>Generate JUnit test reports for Azure Pipelines</One_Line_Description_Summary>
       <Description>&lt;b&gt;Caraya JUnit for Azure Pipelines&lt;/b&gt; is a test report extension for Caraya that generates JUnit test reports compatible with Azure Pipelines. Test reports are generated according to the JUnit result format and can be published to Azure Pipelines using the Publish Test Result v2 task.</Description>
-      <Copyright>Copyright (c) 2023, Pascal Neuperger</Copyright>
+      <Copyright>Copyright (c) 2023-2024, Pascal Neuperger</Copyright>
       <Packager>Pascal Neuperger</Packager>
       <URL>https://github.com/logmanoriginal/caraya-junit-for-azure-pipelines</URL>
-      <Release_Notes>First release.</Release_Notes>
+      <Release_Notes>* [#1] Fixed an issue that prevented Azure Pipelines from parsing a report that included invalid characters.
+* [#2] Fixed an issue that resulted in Azure Pipelines displaying incorrect timestamp values.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -247,7 +248,7 @@ SPDX-License-Identifier: BSD-3-Clause
         <Path>JUnit for Azure Pipelines\Create.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2FE3AEA8B09B8C5F08079295BC8434FC</GUID>
+      <GUID>FD51B9CB7E23B5DFC940BE98F1DE6E42</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
