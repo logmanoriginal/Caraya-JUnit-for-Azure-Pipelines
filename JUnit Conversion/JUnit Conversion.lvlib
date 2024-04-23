@@ -18,6 +18,15 @@
 	<Item Name="Get Error Cluster Call Chain Prefix.vi" Type="VI" URL="../Get Error Cluster Call Chain Prefix.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Get Error Details (Default).vi" Type="VI" URL="../Get Error Details (Default).vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Get Error Details (Error 1097).vi" Type="VI" URL="../Get Error Details (Error 1097).vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
+	<Item Name="Get Error Details (Error 1172).vi" Type="VI" URL="../Get Error Details (Error 1172).vi">
+		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
+	</Item>
 	<Item Name="Get Error Details from Error Cluster.vi" Type="VI" URL="../Get Error Details from Error Cluster.vi">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>

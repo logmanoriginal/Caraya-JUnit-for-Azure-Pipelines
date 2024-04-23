@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-07-22 10:15:16" Modified_Date="2024-04-19 20:26:06" Creator="pasca" Comments="" ID="9ce25a1e98b306d1edbdf4a515bc5afc">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-07-22 10:15:16" Modified_Date="2024-04-24 11:30:48" Creator="pasca" Comments="" ID="39ae9a3aa1262875253ab853a9f9ad6a">
   <Library_General_Settings>
     <Package_File_Name>PNR_lib_Caraya_JUnit_for_Azure_Pipelines</Package_File_Name>
-    <Library_Version>1.0.2.7</Library_Version>
+    <Library_Version>1.1.0.11</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..</Library_Output_Folder>
@@ -28,14 +28,14 @@
       <Pre-Uninstall_VI/>
       <Post-Uninstall_VI/>
     </Custom_Action_VIs>
-    <VI_Package_Configuration_File>.vipc</VI_Package_Configuration_File>
+    <VI_Package_Configuration_File>package.vipc</VI_Package_Configuration_File>
     <Description>
       <One_Line_Description_Summary>Generate JUnit test reports for Azure Pipelines</One_Line_Description_Summary>
       <Description>&lt;b&gt;Caraya JUnit for Azure Pipelines&lt;/b&gt; is a test report extension for Caraya that generates JUnit test reports compatible with Azure Pipelines. Test reports are generated according to the JUnit result format and can be published to Azure Pipelines using the Publish Test Result v2 task.</Description>
       <Copyright>Copyright (c) 2023-2024, Pascal Neuperger</Copyright>
       <Packager>Pascal Neuperger</Packager>
       <URL>https://github.com/logmanoriginal/caraya-junit-for-azure-pipelines</URL>
-      <Release_Notes>* [#3] Fixed an issue that resulted in empty error messages when the error source did not include an `&lt;err&gt;` or `&lt;append&gt;` tag.</Release_Notes>
+      <Release_Notes>* [#5] New error conversion algorithm that provides more insightful results for standard errors, .NET exceptions, and Call Library Function Node exceptions and takes custom error codes into account.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -247,7 +247,7 @@ SPDX-License-Identifier: BSD-3-Clause
         <Path>JUnit for Azure Pipelines\Create.vi</Path>
         <VI_Title/>
       </Items_Data>
-      <GUID>2CF8FBCDE6A6E28C281FB94023093918</GUID>
+      <GUID>6FC2CD5C32E6A62F132F3A03274543B5</GUID>
     </Functions_Palette_Data>
   </Library_Palette_Definition>
 </VI_Package_Builder_Settings>
