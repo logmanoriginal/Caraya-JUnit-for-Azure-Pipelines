@@ -27,4 +27,5 @@
 	<Item Name="Convert Node Result to Test Suite - Specified ID - Same ID.vi" Type="VI" URL="../Convert Node Result to Test Suite - Specified ID - Same ID.vi"/>
 	<Item Name="Convert Node Result to Test Suite - Specified Registration Call Chain - Package is Registration Call Chain Library Name.vi" Type="VI" URL="../Convert Node Result to Test Suite - Specified Registration Call Chain - Package is Registration Call Chain Library Name.vi"/>
 	<Item Name="Convert Node Result to Test Suite - Specified Timestamp - Same Timestamp.vi" Type="VI" URL="../Convert Node Result to Test Suite - Specified Timestamp - Same Timestamp.vi"/>
+	<Item Name="Convert Node Result to Test Suite - Test Registration Call Chain has no Package - Package is Default.vi" Type="VI" URL="../Convert Node Result to Test Suite - Test Registration Call Chain has no Package - Package is Default.vi"/>
 </Library>
