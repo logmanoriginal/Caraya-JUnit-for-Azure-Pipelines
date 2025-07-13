@@ -117,9 +117,9 @@ To get a local copy up and running follow these simple steps.
    ```
 2. Install packages
    ```sh
-   start .vipc
+   start package.vipc
    ```
-   Or apply `.vipc` manually.
+   Or apply `package.vipc` manually.
 
 ## Usage
 
